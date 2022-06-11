@@ -13,11 +13,7 @@
     />
     <link rel="stylesheet" href="./assets/plugins/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/plugins/css/nice-select.css" />
-    <link rel="stylesheet" href="./assets/plugins/css/intlTelInput.min.css" />
-    <link rel="stylesheet" href="./assets/plugins/css/niceCountryInput.css" />
-    <link rel="stylesheet" href="./assets/plugins/css/sweetalert2.min.css" />
-    <link rel="stylesheet" href="./assets/plugins/css/magnific-popup.css" />
-    <link rel="stylesheet" href="./assets/sass/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- Scroll To Top -->
@@ -25,11 +21,11 @@
       <i class="fas fa-chevron-up"></i>
     </div>
     <!-- Preloader Section  -->
-    <div class="preloader_wrapper" id="preLoader">
+    <!-- <div class="preloader_wrapper" id="preLoader">
       <div class="preloader_img">
         <img src="assets/images/header/favicon.png" alt="favicon" />
       </div>
-    </div>
+    </div> -->
 
     <!-- Header Section  -->
     <header class="header_wrapper">
@@ -49,8 +45,8 @@
               </div>
             </div>
             <ul class="order_icon_list d-flex align-items-center">
-              <li class="cart_number" data-number="2">
-                <a href="#">
+              <li class="cart_number" data-number="3" id="cartButtonMobile">
+                <button type="button" >
                   <svg
                     width="20"
                     height="21"
@@ -94,7 +90,224 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                </a>
+                </button>
+                <div class="cart_product_area" id="cartMobile"  >
+                  <div class="cart_product_item_wrapper">
+                    <div
+                      class="cart_product_item d-flex align-items-center justify-content-between"
+                    >
+                      <div class="cart_product_grid">
+                        <div class="cart_img">
+                          <a href="#">
+                            <img
+                              src="assets/images/product/cart_product_img5.png"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div class="cart_content">
+                          <h3>
+                            <a href="#"
+                              >Products Name, Brand Name, Details Here</a
+                            >
+                          </h3>
+                          <h4>$120.00</h4>
+                        </div>
+                      </div>
+                      <button type="button" class="delete_btn">
+                        <svg
+                          width="19"
+                          height="20"
+                          viewBox="0 0 19 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.3238 7.46777C16.3238 7.46777 15.7808 14.2028 15.4658 17.0398C15.3158 18.3948 14.4788 19.1888 13.1078 19.2138C10.4988 19.2608 7.88681 19.2638 5.27881 19.2088C3.95981 19.1818 3.13681 18.3778 2.98981 17.0468C2.67281 14.1848 2.13281 7.46777 2.13281 7.46777"
+                            stroke="#EB5757"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M17.708 4.23926H0.75"
+                            stroke="#EB5757"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M14.4386 4.23949C13.6536 4.23949 12.9776 3.68449 12.8236 2.91549L12.5806 1.69949C12.4306 1.13849 11.9226 0.750488 11.3436 0.750488H7.11063C6.53163 0.750488 6.02363 1.13849 5.87363 1.69949L5.63063 2.91549C5.47663 3.68449 4.80063 4.23949 4.01562 4.23949"
+                            stroke="#EB5757"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <div
+                      class="cart_product_item d-flex align-items-center justify-content-between"
+                    >
+                      <div class="cart_product_grid">
+                        <div class="cart_img">
+                          <a href="#">
+                            <img
+                              src="assets/images/product/cart_product_img5.png"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div class="cart_content">
+                          <h3>
+                            <a href="#"
+                              >Products Name, Brand Name, Details Here</a
+                            >
+                          </h3>
+                          <h4>$120.00</h4>
+                        </div>
+                      </div>
+                      <button type="button" class="delete_btn">
+                        <svg
+                          width="19"
+                          height="20"
+                          viewBox="0 0 19 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.3238 7.46777C16.3238 7.46777 15.7808 14.2028 15.4658 17.0398C15.3158 18.3948 14.4788 19.1888 13.1078 19.2138C10.4988 19.2608 7.88681 19.2638 5.27881 19.2088C3.95981 19.1818 3.13681 18.3778 2.98981 17.0468C2.67281 14.1848 2.13281 7.46777 2.13281 7.46777"
+                            stroke="#EB5757"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M17.708 4.23926H0.75"
+                            stroke="#EB5757"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M14.4386 4.23949C13.6536 4.23949 12.9776 3.68449 12.8236 2.91549L12.5806 1.69949C12.4306 1.13849 11.9226 0.750488 11.3436 0.750488H7.11063C6.53163 0.750488 6.02363 1.13849 5.87363 1.69949L5.63063 2.91549C5.47663 3.68449 4.80063 4.23949 4.01562 4.23949"
+                            stroke="#EB5757"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <div
+                      class="cart_product_item d-flex align-items-center justify-content-between"
+                    >
+                      <div class="cart_product_grid">
+                        <div class="cart_img">
+                          <a href="#">
+                            <img
+                              src="assets/images/product/cart_product_img5.png"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div class="cart_content">
+                          <h3>
+                            <a href="#"
+                              >Products Name, Brand Name, Details Here</a
+                            >
+                          </h3>
+                          <h4>$120.00</h4>
+                        </div>
+                      </div>
+                      <button type="button" class="delete_btn">
+                        <svg
+                          width="19"
+                          height="20"
+                          viewBox="0 0 19 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.3238 7.46777C16.3238 7.46777 15.7808 14.2028 15.4658 17.0398C15.3158 18.3948 14.4788 19.1888 13.1078 19.2138C10.4988 19.2608 7.88681 19.2638 5.27881 19.2088C3.95981 19.1818 3.13681 18.3778 2.98981 17.0468C2.67281 14.1848 2.13281 7.46777 2.13281 7.46777"
+                            stroke="#EB5757"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M17.708 4.23926H0.75"
+                            stroke="#EB5757"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M14.4386 4.23949C13.6536 4.23949 12.9776 3.68449 12.8236 2.91549L12.5806 1.69949C12.4306 1.13849 11.9226 0.750488 11.3436 0.750488H7.11063C6.53163 0.750488 6.02363 1.13849 5.87363 1.69949L5.63063 2.91549C5.47663 3.68449 4.80063 4.23949 4.01562 4.23949"
+                            stroke="#EB5757"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <div
+                      class="cart_product_item d-flex align-items-center justify-content-between"
+                    >
+                      <div class="cart_product_grid">
+                        <div class="cart_img">
+                          <a href="#">
+                            <img
+                              src="assets/images/product/cart_product_img5.png"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div class="cart_content">
+                          <h3>
+                            <a href="#"
+                              >Products Name, Brand Name, Details Here</a
+                            >
+                          </h3>
+                          <h4>$120.00</h4>
+                        </div>
+                      </div>
+                      <button type="button" class="delete_btn">
+                        <svg
+                          width="19"
+                          height="20"
+                          viewBox="0 0 19 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.3238 7.46777C16.3238 7.46777 15.7808 14.2028 15.4658 17.0398C15.3158 18.3948 14.4788 19.1888 13.1078 19.2138C10.4988 19.2608 7.88681 19.2638 5.27881 19.2088C3.95981 19.1818 3.13681 18.3778 2.98981 17.0468C2.67281 14.1848 2.13281 7.46777 2.13281 7.46777"
+                            stroke="#EB5757"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M17.708 4.23926H0.75"
+                            stroke="#EB5757"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M14.4386 4.23949C13.6536 4.23949 12.9776 3.68449 12.8236 2.91549L12.5806 1.69949C12.4306 1.13849 11.9226 0.750488 11.3436 0.750488H7.11063C6.53163 0.750488 6.02363 1.13849 5.87363 1.69949L5.63063 2.91549C5.47663 3.68449 4.80063 4.23949 4.01562 4.23949"
+                            stroke="#EB5757"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <a href="#" class="cart_page_link">Go To Cart</a>
+                </div>
               </li>
               <li class="cart_number" data-number="2">
                 <a href="#">
@@ -226,7 +439,7 @@
           </div>
           <div class="mobile_report_list">
             <div class="mobile_search_form">
-              <form action="" class="search_form">
+              <form action="" class="search_form" id="suggestSearchForm">
                 <input type="text" placeholder="Search for products" />
                 <button type="button" id="searchInputIcon">
                   <img
@@ -234,6 +447,98 @@
                     alt="search image"
                   />
                 </button>
+
+                <div class="show_sugget_search_area">
+                  <div>
+                    <ul>
+                      <li>
+                        <button type="button">Cloth and Others</button>
+                      </li>
+                      <li>
+                        <button type="button">
+                          T-shirts Cloth and other cloth
+                        </button>
+                      </li>
+                      <li><button type="button">T-shirts Cloth</button></li>
+                      <li>
+                        <button type="button">Best T-shirts Cloth</button>
+                      </li>
+                      <li>
+                        <button type="button">Cloth and Others</button>
+                      </li>
+                      <li>
+                        <button type="button">
+                          T-shirts Cloth and other cloth
+                        </button>
+                      </li>
+                      <li><button type="button">T-shirts Cloth</button></li>
+                      <li>
+                        <button type="button">Best T-shirts Cloth</button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <div
+                      class="search_title d-flex align-items-center justify-content-between flex-wrap-wrap g-sm"
+                    >
+                      <h5>Search History</h5>
+                      <button type="button" class="reset_btn">Clear All</button>
+                    </div>
+                    <ul>
+                      <li>
+                        <button type="button">Cloth and Others</button>
+                      </li>
+                      <li>
+                        <button type="button">
+                          T-shirts Cloth and other cloth
+                        </button>
+                      </li>
+                      <li><button type="button">T-shirts Cloth</button></li>
+                      <li>
+                        <button type="button">Best T-shirts Cloth</button>
+                      </li>
+                      <li>
+                        <button type="button">Cloth and Others</button>
+                      </li>
+                      <li>
+                        <button type="button">
+                          T-shirts Cloth and other cloth
+                        </button>
+                      </li>
+                      <li><button type="button">T-shirts Cloth</button></li>
+                      <li>
+                        <button type="button">Best T-shirts Cloth</button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <div
+                      class="search_title d-flex align-items-center justify-content-between flex-wrap-wrap"
+                    >
+                      <h5>Search History</h5>
+                    </div>
+                    <ul
+                      class="search_histroy_list d-flex align-items-center flex-wrap-wrap g-sm"
+                    >
+                      <li>
+                        <button type="button">T-shirts Cloth</button>
+                      </li>
+                      <li>
+                        <button type="button">T-shirts Cloth</button>
+                      </li>
+                      <li>
+                        <button type="button">T-shirts Cloth</button>
+                      </li>
+                      <li>
+                        <button type="button">T-shirts Cloth</button>
+                      </li>
+                      <li>
+                        <button type="button">T-shirts Cloth</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="search_overlay"></div>
               </form>
             </div>
             <ul
@@ -357,11 +662,103 @@
             </ul>
           </div>
           <div class="mobile_search_form">
-            <form action="" class="search_form">
+            <form action="" class="search_form" id="suggestSearchForm">
               <input type="text" placeholder="Search for products" />
               <button type="button" id="searchInputIcon">
                 <img src="assets/images/header/Search.svg" alt="search image" />
               </button>
+
+              <div class="show_sugget_search_area">
+                <div>
+                  <ul>
+                    <li>
+                      <button type="button">Cloth and Others</button>
+                    </li>
+                    <li>
+                      <button type="button">
+                        T-shirts Cloth and other cloth
+                      </button>
+                    </li>
+                    <li><button type="button">T-shirts Cloth</button></li>
+                    <li>
+                      <button type="button">Best T-shirts Cloth</button>
+                    </li>
+                    <li>
+                      <button type="button">Cloth and Others</button>
+                    </li>
+                    <li>
+                      <button type="button">
+                        T-shirts Cloth and other cloth
+                      </button>
+                    </li>
+                    <li><button type="button">T-shirts Cloth</button></li>
+                    <li>
+                      <button type="button">Best T-shirts Cloth</button>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div
+                    class="search_title d-flex align-items-center justify-content-between flex-wrap-wrap g-sm"
+                  >
+                    <h5>Search History</h5>
+                    <button type="button" class="reset_btn">Clear All</button>
+                  </div>
+                  <ul>
+                    <li>
+                      <button type="button">Cloth and Others</button>
+                    </li>
+                    <li>
+                      <button type="button">
+                        T-shirts Cloth and other cloth
+                      </button>
+                    </li>
+                    <li><button type="button">T-shirts Cloth</button></li>
+                    <li>
+                      <button type="button">Best T-shirts Cloth</button>
+                    </li>
+                    <li>
+                      <button type="button">Cloth and Others</button>
+                    </li>
+                    <li>
+                      <button type="button">
+                        T-shirts Cloth and other cloth
+                      </button>
+                    </li>
+                    <li><button type="button">T-shirts Cloth</button></li>
+                    <li>
+                      <button type="button">Best T-shirts Cloth</button>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div
+                    class="search_title d-flex align-items-center justify-content-between flex-wrap-wrap"
+                  >
+                    <h5>Search History</h5>
+                  </div>
+                  <ul
+                    class="search_histroy_list d-flex align-items-center flex-wrap-wrap g-sm"
+                  >
+                    <li>
+                      <button type="button">T-shirts Cloth</button>
+                    </li>
+                    <li>
+                      <button type="button">T-shirts Cloth</button>
+                    </li>
+                    <li>
+                      <button type="button">T-shirts Cloth</button>
+                    </li>
+                    <li>
+                      <button type="button">T-shirts Cloth</button>
+                    </li>
+                    <li>
+                      <button type="button">T-shirts Cloth</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="search_overlay"></div>
             </form>
           </div>
         </div>
@@ -392,7 +789,7 @@
                     </button>
                   </li>
                   <li class="desktop_search_box">
-                    <form action="" class="search_form" id="topbarSearchForm">
+                    <form action="" class="search_form" id="suggestSearchForm">
                       <input type="text" placeholder="Search for products" />
                       <button type="button" id="searchInputIcon">
                         <img
@@ -400,6 +797,107 @@
                           alt="search image"
                         />
                       </button>
+                      <div class="show_sugget_search_area">
+                        <div>
+                          <ul>
+                            <li>
+                              <button type="button">Cloth and Others</button>
+                            </li>
+                            <li>
+                              <button type="button">
+                                T-shirts Cloth and other cloth
+                              </button>
+                            </li>
+                            <li>
+                              <button type="button">T-shirts Cloth</button>
+                            </li>
+                            <li>
+                              <button type="button">Best T-shirts Cloth</button>
+                            </li>
+                            <li>
+                              <button type="button">Cloth and Others</button>
+                            </li>
+                            <li>
+                              <button type="button">
+                                T-shirts Cloth and other cloth
+                              </button>
+                            </li>
+                            <li>
+                              <button type="button">T-shirts Cloth</button>
+                            </li>
+                            <li>
+                              <button type="button">Best T-shirts Cloth</button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <div
+                            class="search_title d-flex align-items-center justify-content-between flex-wrap-wrap g-sm"
+                          >
+                            <h5>Search History</h5>
+                            <button type="button" class="reset_btn">
+                              Clear All
+                            </button>
+                          </div>
+                          <ul>
+                            <li>
+                              <button type="button">Cloth and Others</button>
+                            </li>
+                            <li>
+                              <button type="button">
+                                T-shirts Cloth and other cloth
+                              </button>
+                            </li>
+                            <li>
+                              <button type="button">T-shirts Cloth</button>
+                            </li>
+                            <li>
+                              <button type="button">Best T-shirts Cloth</button>
+                            </li>
+                            <li>
+                              <button type="button">Cloth and Others</button>
+                            </li>
+                            <li>
+                              <button type="button">
+                                T-shirts Cloth and other cloth
+                              </button>
+                            </li>
+                            <li>
+                              <button type="button">T-shirts Cloth</button>
+                            </li>
+                            <li>
+                              <button type="button">Best T-shirts Cloth</button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <div
+                            class="search_title d-flex align-items-center justify-content-between flex-wrap-wrap"
+                          >
+                            <h5>Search History</h5>
+                          </div>
+                          <ul
+                            class="search_histroy_list d-flex align-items-center flex-wrap-wrap g-sm"
+                          >
+                            <li>
+                              <button type="button">T-shirts Cloth</button>
+                            </li>
+                            <li>
+                              <button type="button">T-shirts Cloth</button>
+                            </li>
+                            <li>
+                              <button type="button">T-shirts Cloth</button>
+                            </li>
+                            <li>
+                              <button type="button">T-shirts Cloth</button>
+                            </li>
+                            <li>
+                              <button type="button">T-shirts Cloth</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="search_overlay"></div>
                     </form>
                   </li>
                   <li class="topbar_single_list">
@@ -611,8 +1109,8 @@
               <ul
                 class="order_icon_list d-flex align-items-center flex-wrap-wrap"
               >
-                <li class="cart_number" data-number="2">
-                  <a href="#">
+                <li class="cart_number" data-number="3" id="cartButtonDesk">
+                  <button type="button" >
                     <svg
                       width="20"
                       height="21"
@@ -656,7 +1154,224 @@
                         stroke-linejoin="round"
                       />
                     </svg>
-                  </a>
+                  </button>
+                  <div class="cart_product_area" id="cartDesktop"  >
+                    <div class="cart_product_item_wrapper">
+                      <div
+                        class="cart_product_item d-flex align-items-center justify-content-between"
+                      >
+                        <div class="cart_product_grid">
+                          <div class="cart_img">
+                            <a href="#">
+                              <img
+                                src="assets/images/product/cart_product_img5.png"
+                                alt=""
+                              />
+                            </a>
+                          </div>
+                          <div class="cart_content">
+                            <h3>
+                              <a href="#"
+                                >Products Name, Brand Name, Details Here</a
+                              >
+                            </h3>
+                            <h4>$120.00</h4>
+                          </div>
+                        </div>
+                        <button type="button" class="delete_btn">
+                          <svg
+                            width="19"
+                            height="20"
+                            viewBox="0 0 19 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.3238 7.46777C16.3238 7.46777 15.7808 14.2028 15.4658 17.0398C15.3158 18.3948 14.4788 19.1888 13.1078 19.2138C10.4988 19.2608 7.88681 19.2638 5.27881 19.2088C3.95981 19.1818 3.13681 18.3778 2.98981 17.0468C2.67281 14.1848 2.13281 7.46777 2.13281 7.46777"
+                              stroke="#EB5757"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M17.708 4.23926H0.75"
+                              stroke="#EB5757"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M14.4386 4.23949C13.6536 4.23949 12.9776 3.68449 12.8236 2.91549L12.5806 1.69949C12.4306 1.13849 11.9226 0.750488 11.3436 0.750488H7.11063C6.53163 0.750488 6.02363 1.13849 5.87363 1.69949L5.63063 2.91549C5.47663 3.68449 4.80063 4.23949 4.01562 4.23949"
+                              stroke="#EB5757"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <div
+                        class="cart_product_item d-flex align-items-center justify-content-between"
+                      >
+                        <div class="cart_product_grid">
+                          <div class="cart_img">
+                            <a href="#">
+                              <img
+                                src="assets/images/product/cart_product_img5.png"
+                                alt=""
+                              />
+                            </a>
+                          </div>
+                          <div class="cart_content">
+                            <h3>
+                              <a href="#"
+                                >Products Name, Brand Name, Details Here</a
+                              >
+                            </h3>
+                            <h4>$120.00</h4>
+                          </div>
+                        </div>
+                        <button type="button" class="delete_btn">
+                          <svg
+                            width="19"
+                            height="20"
+                            viewBox="0 0 19 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.3238 7.46777C16.3238 7.46777 15.7808 14.2028 15.4658 17.0398C15.3158 18.3948 14.4788 19.1888 13.1078 19.2138C10.4988 19.2608 7.88681 19.2638 5.27881 19.2088C3.95981 19.1818 3.13681 18.3778 2.98981 17.0468C2.67281 14.1848 2.13281 7.46777 2.13281 7.46777"
+                              stroke="#EB5757"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M17.708 4.23926H0.75"
+                              stroke="#EB5757"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M14.4386 4.23949C13.6536 4.23949 12.9776 3.68449 12.8236 2.91549L12.5806 1.69949C12.4306 1.13849 11.9226 0.750488 11.3436 0.750488H7.11063C6.53163 0.750488 6.02363 1.13849 5.87363 1.69949L5.63063 2.91549C5.47663 3.68449 4.80063 4.23949 4.01562 4.23949"
+                              stroke="#EB5757"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <div
+                        class="cart_product_item d-flex align-items-center justify-content-between"
+                      >
+                        <div class="cart_product_grid">
+                          <div class="cart_img">
+                            <a href="#">
+                              <img
+                                src="assets/images/product/cart_product_img5.png"
+                                alt=""
+                              />
+                            </a>
+                          </div>
+                          <div class="cart_content">
+                            <h3>
+                              <a href="#"
+                                >Products Name, Brand Name, Details Here</a
+                              >
+                            </h3>
+                            <h4>$120.00</h4>
+                          </div>
+                        </div>
+                        <button type="button" class="delete_btn">
+                          <svg
+                            width="19"
+                            height="20"
+                            viewBox="0 0 19 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.3238 7.46777C16.3238 7.46777 15.7808 14.2028 15.4658 17.0398C15.3158 18.3948 14.4788 19.1888 13.1078 19.2138C10.4988 19.2608 7.88681 19.2638 5.27881 19.2088C3.95981 19.1818 3.13681 18.3778 2.98981 17.0468C2.67281 14.1848 2.13281 7.46777 2.13281 7.46777"
+                              stroke="#EB5757"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M17.708 4.23926H0.75"
+                              stroke="#EB5757"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M14.4386 4.23949C13.6536 4.23949 12.9776 3.68449 12.8236 2.91549L12.5806 1.69949C12.4306 1.13849 11.9226 0.750488 11.3436 0.750488H7.11063C6.53163 0.750488 6.02363 1.13849 5.87363 1.69949L5.63063 2.91549C5.47663 3.68449 4.80063 4.23949 4.01562 4.23949"
+                              stroke="#EB5757"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <div
+                        class="cart_product_item d-flex align-items-center justify-content-between"
+                      >
+                        <div class="cart_product_grid">
+                          <div class="cart_img">
+                            <a href="#">
+                              <img
+                                src="assets/images/product/cart_product_img5.png"
+                                alt=""
+                              />
+                            </a>
+                          </div>
+                          <div class="cart_content">
+                            <h3>
+                              <a href="#"
+                                >Products Name, Brand Name, Details Here</a
+                              >
+                            </h3>
+                            <h4>$120.00</h4>
+                          </div>
+                        </div>
+                        <button type="button" class="delete_btn">
+                          <svg
+                            width="19"
+                            height="20"
+                            viewBox="0 0 19 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.3238 7.46777C16.3238 7.46777 15.7808 14.2028 15.4658 17.0398C15.3158 18.3948 14.4788 19.1888 13.1078 19.2138C10.4988 19.2608 7.88681 19.2638 5.27881 19.2088C3.95981 19.1818 3.13681 18.3778 2.98981 17.0468C2.67281 14.1848 2.13281 7.46777 2.13281 7.46777"
+                              stroke="#EB5757"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M17.708 4.23926H0.75"
+                              stroke="#EB5757"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M14.4386 4.23949C13.6536 4.23949 12.9776 3.68449 12.8236 2.91549L12.5806 1.69949C12.4306 1.13849 11.9226 0.750488 11.3436 0.750488H7.11063C6.53163 0.750488 6.02363 1.13849 5.87363 1.69949L5.63063 2.91549C5.47663 3.68449 4.80063 4.23949 4.01562 4.23949"
+                              stroke="#EB5757"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <a href="#" class="cart_page_link">Go To Cart</a>
+                  </div>
                 </li>
                 <li class="cart_number" data-number="2">
                   <a href="#">
@@ -5459,15 +6174,8 @@
     <!-- JS Here -->
     <script src="assets/plugins/js/jquery-3.6.0.min.js"></script>
     <script src="assets/plugins/js/swiper-bundle.min.js"></script>
-    <script src="assets/plugins/js/zoomsl.min.js"></script>
     <script src="assets/plugins/js/jquery.nice-select.min.js"></script>
-    <script src="assets/plugins/js/intlTelInput-jquery.min.js"></script>
-    <script src="assets/plugins/js/niceCountryInput.js"></script>
-    <script src="assets/plugins/js/sweetalert2.min.js"></script>
-    <script src="assets/plugins/js/multi-animated-counter.js"></script>
     <script src="assets/plugins/js/countdown.jquery.min.js"></script>
-    <script src="assets/plugins/js/jquery.magnific-popup.min.js"></script>
-
     <script
       src="https://kit.fontawesome.com/46f35fbc02.js"
       crossorigin="anonymous"
