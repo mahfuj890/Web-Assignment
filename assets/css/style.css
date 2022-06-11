@@ -1861,7 +1861,9 @@
           align-items: start;
   gap: 24px 30px;
 }
-
+.electronic_product_wrapper  .product_item .product_img img{
+height: 140px;
+}
 @media all and (max-width: 767px) {
   .electronic_product_wrapper .electronic_slider_grid {
     -webkit-transition: 0.5s;
